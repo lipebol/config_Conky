@@ -1,7 +1,20 @@
+<h1 align="center">
+        Config. Conky
+</h1>
+
+<h4 align="center">
+  Conky Layout Settings
+</h4>
+
 <p align="center">
-  <img width="300" src="https://github.com/brndnmtthws/conky/blob/main/logo/conky-logotype-horizontal-violet.png">
+ <a href="#memo-Sobre">Sobre</a> &nbsp; | &nbsp;
+ <a href="#art-Layout">Layout</a> &nbsp; | &nbsp;
+ <a href="#mag_right-Status">Status</a> &nbsp; | &nbsp;
+ <a href="#man_technologist-Contribuidores">Contribuidores</a> &nbsp; | &nbsp;
+ <a href="#bulb-Autor">Autor</a> &nbsp; | &nbsp;
 </p>
-<br/>
+
+
 <p align="left">
   Conky é um monitor de sistema leve e gratuito para X, que exibe
   qualquer tipo de informação em sua área de trabalho.
@@ -16,6 +29,7 @@ Nesse projeto estão configurações para o "layout" do [**Conky**](https://gith
 > Icons: **Freepik**
 
 > Wallpapers: **Shaply Works** e **AllMacWallpaper**
+
 ## :art: Layout
 
 <p align="center">
