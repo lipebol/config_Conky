@@ -11,7 +11,7 @@
  <a href="#art-Layout">Layout</a> &nbsp; | &nbsp;
  <a href="#mag_right-Status">Status</a> &nbsp; | &nbsp;
  <a href="#man_technologist-Contribuidores">Contribuidores</a> &nbsp; | &nbsp;
- <a href="#bulb-Autor">Autor</a> &nbsp; | &nbsp;
+ <a href="#bulb-Autor">Autor</a>
 </p>
 
 
