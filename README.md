@@ -24,6 +24,8 @@ Nesse projeto estão configurações para o "layout" do [**Conky**](https://gith
 
 > Scripts Spotify: **github.com/Madh93/conky-spotify**
 
+> Glava: **github.com/jarcode-foss/glava**
+
 ## :art: Layout
 
 <p align="center">
