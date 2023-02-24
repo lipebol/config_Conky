@@ -1,0 +1,91 @@
+-- Config_Settings: http://conky.sourceforge.net/config_settings.html
+-- Config_Variables: http://conky.sourceforge.net/variables.html
+
+
+conky.config = {
+
+  -- Conky --
+
+  background = true,
+  update_interval = 1,
+  total_run_times = 0,  
+  cpu_avg_samples = 4,
+  net_avg_samples = 2,  
+  override_utf8_locale = true,  
+  double_buffer = true,
+  no_buffers = true,
+  imlib_cache_size=0,  
+  text_buffer_size = 256,
+
+  -- Window --
+
+  own_window = true,
+  own_window_colour = '000000',
+  own_window_class = 'Conky',
+  own_window_argb_visual = true,
+  own_window_argb_count = 0,
+  own_window_argb_value = 0,
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  alignment = 'top_left',
+  gap_x = 20,
+  gap_y = 80,
+
+  -- Graphics -- 
+
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+  
+  -- Text --
+
+  use_xft = true,
+  xftalpha = 1,
+  uppercase = false,
+  pad_percents = 0,
+
+};
+
+conky.text = [[
+#				-- CLOCK --
+${color e95420}${font  Abnes:bold:size= 8}${alignr}${time %A, %d %B}
+
+${color e95420}${font Abnes:size= 28}${alignr}${time %H:%M}
+#				-- HEADER --
+${color 03b0d2}${font Abnes:bold:size= 7}${alignr}$nodename
+${alignr}$uptime
+
+${color e95420}${font Abnes:bold:size= 7}${alignr}${exec hostnamectl | grep System | cut -c 19-30}
+
+${alignr}${exec hostnamectl | grep Kernel | cut  -c 18-32}
+
+${alignr}${exec hostnamectl | grep Architecture | cut  -c 18-40}
+
+${image ~/config_Conky/Conky_Gorilla/1366x768/Icons/gorilla.png -p 2, 30 -s 140x140}
+${image ~/config_Conky/Conky_Gorilla/1366x768/Icons/ubuntu.png -p 66, 90 -s 36x36}
+
+#				-- CPU --
+${color 03b0d2}${font Abnes:bold:size= 8}${exec lscpu | grep "Nome do modelo" | cut -c "51-60"}${font Abnes:size= 8}${alignr}$cpu %
+${font Abnes:bold:size= 7}${alignr}${execi 2 sensors | grep 'id 0'| cut -c17-18}${font :bold:size= 7}   °${font Abnes:bold:size= 7}C
+
+${color e95420}${font Abnes:bold:size= 7}  Core I  ${cpugraph cpu1 30, 76 222222 e95420}${color e95420} Core III ${cpugraph cpu3 30, 73 222222 e95420}
+${color 03b0d2}  Core II  ${cpugraph cpu2 30, 73 222222 039fab}${color 03b0d2} Core IV ${cpugraph cpu4 30, 66 222222 039fab}
+
+
+#				-- RAM --
+${color e95420}${font Abnes:bold:size= 8} Mem${font Abnes:size= 8}${alignr}$mem
+${color e95420}${font Abnes:bold:size= 8} Swap${font Abnes:size= 8}${alignr}$swap
+
+
+#				-- HD --
+${color 03b0d2}${font Abnes:bold:size= 8} Disk${alignr}${diskio /dev/sda}
+${diskiograph 30, 308 222222 039fab}
+
+#				-- NETWORK --
+${color e95420}${font Abnes:bold:size= 8} ${wireless_essid "your_network_interface"}
+${downspeedgraph "your_network_interface" 30, 308 222222 e95420}
+${font :size= 8}    ▼  ${font Abnes:size= 8}${alignr}${downspeed "your_network_interface"}
+
+]];

@@ -1,18 +1,10 @@
 <h1 align="center">
-        Config. Conky
+        config_Conky
 </h1>
 
 <h4 align="center">
   Conky Layout Settings
 </h4>
-
-<p align="center">
- <a href="#memo-Sobre">Sobre</a> &nbsp; | &nbsp;
- <a href="#art-Layout">Layout</a> &nbsp; | &nbsp;
- <a href="#mag_right-Status">Status</a> &nbsp; | &nbsp;
- <a href="#man_technologist-Contribuidores">Contribuidores</a> &nbsp; | &nbsp;
- <a href="#bulb-Autor">Autor</a>
-</p>
 
 
 <p align="left">
@@ -24,11 +16,13 @@
 
 ## :memo: Sobre
 
-Nesse projeto estão configurações para o "layout" do [**Conky**](https://github.com/brndnmtthws/conky).
+Nesse projeto estão configurações para o "layout" do [**Conky**](https://github.com/brndnmtthws/conky/wiki/Configs).
 
 > Icons: **Freepik**
 
-> Wallpapers: **Shaply Works** e **AllMacWallpaper**
+> Wallpapers: **Shaply Works**, **AllMacWallpaper** e **Crowned**
+
+> Scripts Spotify: [**Madh93/conky-spotify**](https://github.com/Madh93/conky-spotify)
 
 ## :art: Layout
 
@@ -44,20 +38,6 @@ Nesse projeto estão configurações para o "layout" do [**Conky**](https://gith
 ## :mag_right: Status
 
 O projeto está: FINALIZADO :heavy_check_mark:
-
-> Caso tenha sugestões entre em [contato](https://www.linkedin.com/in/lipebol/).
-
-## :man_technologist: Contribuidores
-
-<a href="https://github.com/lipebol">
-  &nbsp;&nbsp;
-  &nbsp;&nbsp;
-  &nbsp;
-        <img src="https://avatars.githubusercontent.com/u/72844312?v=4" width="140px;"/>
-</a>
-
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/lipebol/) 
-[![Medium Badge](https://img.shields.io/badge/-Medium-000000?style=for-the-badge&logo=Medium&logoColor=white)]()
 
 ## :bulb: Autor
 

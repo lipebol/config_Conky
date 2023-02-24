@@ -1,0 +1,5 @@
+#!/bin/bash
+sleep 5s
+
+conky -c  $HOME/config_Conky/Conky_Gorilla/1366x768/conky.conf_left_01
+conky -c  $HOME/config_Conky/Conky_Gorilla/1366x768/conky.conf_left_02
