@@ -22,7 +22,7 @@ Nesse projeto estão configurações para o "layout" do [**Conky**](https://gith
 
 > Wallpapers: **Shaply Works**, **AllMacWallpaper** e **Crowned**
 
-> Scripts Spotify: [**Madh93/conky-spotify**](https://github.com/Madh93/conky-spotify)
+> Scripts Spotify: **https://github.com/Madh93/conky-spotify**
 
 ## :art: Layout
 
