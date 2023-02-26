@@ -6,47 +6,38 @@
   Conky Layout Settings
 </h4>
 
-
-<p align="left">
-  Conky é um monitor de sistema leve e gratuito para X, que exibe
-  qualquer tipo de informação em sua área de trabalho.
-<p/>
-
-> Veja tudo sobre **Conky** em: [brndnmtthws/conky](https://github.com/brndnmtthws/conky)
+<p align="center">
+	<img alt="gif layout Conky" src="https://res.cloudinary.com/dfph6kr4e/image/upload/v1677448453/gif_Conky_tnt5pj.gif">
+</p>
 
 ## :memo: Sobre
 
-Nesse projeto estão configurações para o "layout" do [**Conky**](https://github.com/brndnmtthws/conky/wiki/Configs).
+Nesse repositório estão configurações para o "layout" do [**Conky**](https://github.com/brndnmtthws/conky/wiki/Configs).
 
 > Icons: **Freepik**
 
-> Wallpapers: **Shaply Works**, **AllMacWallpaper** e **Crowned**
+> Wallpapers: **Shaply Works** e **AllMacWallpaper**
 
 > Scripts Spotify: **github.com/Madh93/conky-spotify**
 
 > Glava: **github.com/jarcode-foss/glava**
 
-## :art: Layout
+Conky é um monitor de sistema leve e gratuito para X, que exibe qualquer tipo de informação em sua área de trabalho.
 
-<p align="center">
-<img alt="screenshot_Conky_Gorilla" width="710" src="https://raw.githubusercontent.com/lipebol/config_Conky/master/Conky_Gorilla/screenshot_Gorilla.png">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-<p align="center">
-<img alt="screenshot_Conky_Mundi" width="710" src="https://raw.githubusercontent.com/lipebol/config_Conky/master/Conky_Mundi/screenshot_Mundi.png">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-</p>
+> Veja tudo sobre **Conky** em: [brndnmtthws/conky](https://github.com/brndnmtthws/conky)
 
 ## :mag_right: Status
 
-O projeto está: FINALIZADO :heavy_check_mark:
+
+<h3 align="center"> 
+	Finalizado :heavy_check_mark:
+</h3>
 
 ## :bulb: Autor
 
 "Que o nome de Deus seja louvado para todo o sempre, pois a sabedoria e o poder a ele pertencem."
 
 Daniel 2.20
-
 
 
 Agradeço a Deus o Pai que por meio de seu Filho Jesus Cristo nos enviou o Espírito Santo que nos ajuda em todas as nossas atividades e trabalhos!
