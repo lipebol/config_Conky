@@ -1,0 +1,61 @@
+-- Config_Settings: http://conky.sourceforge.net/config_settings.html
+-- Config_Variables: http://conky.sourceforge.net/variables.html
+
+
+conky.config = {
+
+  -- Conky --
+  
+  background = true,
+  update_interval = 1,
+  total_run_times = 0,  
+  cpu_avg_samples = 4,
+  net_avg_samples = 2,  
+  override_utf8_locale = true,  
+  double_buffer = true,
+  no_buffers = true,
+  imlib_cache_size=0,  
+  text_buffer_size = 256,
+
+  -- Window --
+
+  own_window = true,
+  own_window_colour = '000000',
+  own_window_class = 'Conky',
+  own_window_argb_visual = true,
+  own_window_argb_count = 0,
+  own_window_argb_value = 0,
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  minimum_height = 768,
+  minimum_width = 1440,
+  alignment = 'top_right',
+
+  -- Graphics -- 
+
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+  
+  -- Text --
+
+  use_xft = true,
+  xftalpha = 1,
+  uppercase = false,
+  pad_percents = 0,
+
+};
+
+conky.text = [[
+#				-- ICONS --
+${image ~/config_Conky/Conky_RWB/1366x768/Icons/two-connected-squares-graphic.png -p 1348, 40 -s 130x130}
+${image ~/config_Conky/Conky_RWB/1366x768/Icons/two-connected-squares-graphic.png -p 1348, 112 -s 130x130}
+${image ~/config_Conky/Conky_RWB/1366x768/Icons/two-squares-business-graphic.png -p 1349, 110 -s 130x130}
+${image ~/config_Conky/Conky_RWB/1366x768/Icons/two-squares-business-graphic.png -p 26, 594 -s 150x150}
+${if_running spotify}
+${image ~/config_Conky/Conky_RWB/1366x768/Icons/two-squares-business-graphic.png -p 28, 168 -s 130x130}
+${endif}
+
+]];

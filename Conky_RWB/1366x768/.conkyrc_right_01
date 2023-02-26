@@ -1,0 +1,73 @@
+-- Config_Settings: http://conky.sourceforge.net/config_settings.html
+-- Config_Variables: http://conky.sourceforge.net/variables.html
+
+
+conky.config = {
+
+  -- Conky --
+  
+  background = true,
+  update_interval = 1,
+  total_run_times = 0,  
+  cpu_avg_samples = 4,
+  net_avg_samples = 2,  
+  override_utf8_locale = true,  
+  double_buffer = true,
+  no_buffers = true,
+  imlib_cache_size=0,  
+  text_buffer_size = 256,
+
+  -- Window --
+
+  own_window = true,
+  own_window_colour = '000000',
+  own_window_class = 'Conky',
+  own_window_argb_visual = true,
+  own_window_argb_count = 0,
+  own_window_argb_value = 0,
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  alignment = 'top_right',
+  gap_x = 80,
+  gap_y = 50,
+
+  -- Graphics -- 
+
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+  
+  -- Text --
+
+  use_xft = true,
+  xftalpha = 1,
+  uppercase = false,
+  pad_percents = 0,
+
+};
+
+conky.text = [[
+#				-- CPU AND RAM --
+${color 6C3277}${font Abnes:bold:size= 8}${exec lscpu | grep "Nome do modelo" | cut -c "34-38 51-60"}
+
+${color a689d9}${font Abnes:size= 7}  Core I    ${execi 2 sensors | grep 'Core 0'| cut -c17-18}${font :size= 7}  °${font Abnes:size= 7}C
+
+  Core I I   ${color a689d9}${execi 2 sensors | grep 'Core 1'| cut -c17-18}${font :size= 7}  °${font Abnes:size= 7}C
+
+${color bb9bf2}${font Abnes:bold:size= 8}${alignr}$cpu %
+
+
+
+${color 6C3277}${font Abnes:bold:size= 8}Mem
+
+${color bb9bf2}${alignr}$mem
+
+
+
+${color 6C3277}${font Abnes:bold:size= 8}Swap
+
+${color bb9bf2}${alignr}$swap
+
+]];
