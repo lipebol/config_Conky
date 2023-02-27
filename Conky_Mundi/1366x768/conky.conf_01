@@ -102,9 +102,9 @@ ${color 56696F}${font Abnes:size= 7}Swap${alignr}$swap
 
 #				-- NETWORK --
 
-${color 56696F}${font Abnes:size= 7}${wireless_essid wlp2s0}${alignr}${addr wlp2s0}
-${offset 4}${downspeedgraph wlp2s0 40, 1354 222222 56696F}
-${font :size= 8}${alignr} ▼ ${font Abnes:size= 7}${downspeed wlp2s0}
+${color 56696F}${font Abnes:size= 7}${wireless_essid "your_network_interface"}${alignr}${addr "your_network_interface"}
+${offset 4}${downspeedgraph "your_network_interface" 40, 1354 222222 56696F}
+${font :size= 8}${alignr} ▼ ${font Abnes:size= 7}${downspeed "your_network_interface"}
 
 
 
