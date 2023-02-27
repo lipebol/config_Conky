@@ -1,0 +1,125 @@
+-- Config_Settings: http://conky.sourceforge.net/config_settings.html
+-- Config_Variables: http://conky.sourceforge.net/variables.html
+
+
+conky.config = {
+
+  -- Conky --
+
+  background = true,
+  update_interval = 1,
+  total_run_times = 0,  
+  cpu_avg_samples = 4,
+  net_avg_samples = 2,  
+  override_utf8_locale = true,  
+  double_buffer = true,
+  no_buffers = true,
+  imlib_cache_size=0,  
+  text_buffer_size = 256,
+
+  -- Window --
+
+  own_window = true,
+  own_window_colour = '000000',
+  own_window_class = 'Conky',
+  own_window_argb_visual = true,
+  own_window_argb_count = 0,
+  own_window_argb_value = 0,
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  maximum_width = 1354,
+  alignment = 'top_right',
+  gap_x = 5,
+  gap_y = 0,
+
+  -- Graphics -- 
+
+  draw_shades = false,
+  draw_outline = false,
+  draw_borders = false,
+  draw_graph_borders = false,
+  
+  -- Text --
+
+  use_xft = true,
+  xftalpha = 1,
+  uppercase = false,
+  pad_percents = 0,
+
+};
+
+
+conky.text = [[
+
+
+#				-- HD --
+
+${color 56696F}${font Abnes:size= 7}Disk${alignr}${diskio /dev/sda}
+${offset 4}${diskiograph 40, 1354 222222 56696F}
+#				-- CPU --
+
+${color 56696F}${font Abnes:size= 7}${exec lscpu | grep "Nome do modelo" | cut -c "52-60"}${alignr}$cpu%
+
+
+
+
+
+
+
+
+
+
+                                                            ${color D6D6D6}${font Abnes:bold:size= 7}${exec git --version | cut -c 12-20}
+
+
+
+
+
+
+
+
+
+#				-- CLOCK --
+
+${color D6D6D6}${alignc}${font Abnes:bold:size= 7}${time %A, %d %B}
+${color D6D6D6}${alignc}${font Abnes:size= 28}${time %H:%M}
+${color 56696F}${font Abnes:size= 7}$nodename${alignr}$uptime
+
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/tux.png -p 60, 392 -s 48x48}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/ubuntu_center.png -p 295, 70 -s 630x630}
+
+
+
+
+#				-- RAM --
+
+${color 56696F}${font Abnes:size= 7}Mem${alignr}$mem
+${color 56696F}${font Abnes:size= 7}Swap${alignr}$swap
+                                                                                                                                                               ${color D6D6D6}${font Abnes:bold:size= 7}${exec python3 --version | cut -c 8-20}
+
+
+
+#				-- NETWORK --
+
+${color 56696F}${font Abnes:size= 7}${wireless_essid wlp2s0}${alignr}${addr wlp2s0}
+${offset 4}${downspeedgraph wlp2s0 40, 1354 222222 56696F}
+${font :size= 8}${alignr} ▼ ${font Abnes:size= 7}${downspeed wlp2s0}
+
+
+
+
+${color A6A6A6}${font Abnes:bold:size= 7}${alignc}${exec hostnamectl | grep "Operating System"| cut -c 25-30}
+
+#				-- ICONS --
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/two-squares-business-graphic.png -p 650, 36 -s 72x72}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/spotify.png -p 650, 65 -s 36x36}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/two-squares-business-graphic.png -p 990, 480 -s 74x74}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/python.png -p 1022, 486 -s 40x40}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/two-squares-business-graphic.png -p 308, 234 -s 72x72}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/github.png -p 308, 260 -s 40x40}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/intel.png -p 300, 704 -s 64x64}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/ubuntu.png -p 660, 714 -s 42x42}
+${image ~/config_Conky/Conky_Mundi/1366x768/Icons/nvidia.png -p 970, 704 -s 64x64}
+
+]];
