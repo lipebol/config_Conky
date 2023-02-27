@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-	<img alt="gif layout Conky" src="https://res.cloudinary.com/dfph6kr4e/image/upload/v1677448453/gif_Conky_tnt5pj.gif">
+	<img alt="gif layout Conky" src="https://res.cloudinary.com/dfph6kr4e/image/upload/v1677532846/gif_Conky_xmq9xr.gif">
 </p>
 
 ## :memo: Sobre
